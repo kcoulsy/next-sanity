@@ -58,7 +58,7 @@ export default defineConfig({
           .title('Base')
           .items([
             S.listItem()
-              .title('Site Settings')
+              .title('Config')
               .child(S.document().schemaType('config').documentId('config')),
             ...S.documentTypeListItems(),
           ]),
