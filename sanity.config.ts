@@ -60,7 +60,9 @@ export default defineConfig({
             S.listItem()
               .title('Config')
               .child(S.document().schemaType('config').documentId('config')),
-            ...S.documentTypeListItems(),
+            ...S.documentTypeListItems().filter(
+              (listItem) => !['config'].includes(listItem.getId()),
+            ),
           ]),
     }),
     // Add the "Open preview" action
