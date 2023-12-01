@@ -6,5 +6,5 @@ import config from './config'
 
 export const schemaTypes = [post, blockContent, config]
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [post, blockContent],
+  types: [post, blockContent, config],
 }
