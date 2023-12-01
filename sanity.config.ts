@@ -53,6 +53,15 @@ export default defineConfig({
           S.view.component(Iframe).options(iframeOptions).title('Preview'),
         ])
       },
+      structure: (S) =>
+        S.list()
+          .title('Base')
+          .items([
+            S.listItem()
+              .title('Site Settings')
+              .child(S.document().schemaType('config').documentId('config')),
+            ...S.documentTypeListItems(),
+          ]),
     }),
     // Add the "Open preview" action
     previewUrl({
