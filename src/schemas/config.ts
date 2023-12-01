@@ -11,9 +11,10 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'html',
-      title: 'HTML',
-      type: 'content',
+      title: 'Content',
+      name: 'content',
+      type: 'array',
+      of: [{ type: 'block' }],
     }),
     defineField({
       name: 'description',
