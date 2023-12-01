@@ -11,6 +11,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'html',
+      title: 'HTML',
+      type: 'content',
+    }),
+    defineField({
       name: 'description',
       title: 'Meta Description',
       type: 'text',
